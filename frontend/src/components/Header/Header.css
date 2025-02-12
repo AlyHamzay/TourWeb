@@ -1,0 +1,45 @@
+.header{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+}
+
+.logo img{
+    width: 50%;
+}
+.menu{
+    margin-bottom: 0;
+}
+
+.nav__item a{
+    text-decoration:none;
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.nav__item a:hover{
+    color: inherit;
+}
+
+.nav__item a.active__link{
+    color: var(--secondary-color );
+}
+
+.mobile__menu{
+    font-size: 1.3rem;
+    color: var(--heading-color );
+    display: none !important;
+}
+
+.sticky_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it stays above other content */
+    background: white; /* Match the header's background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+    transition: all 0.5s ease-in-out; /* Smooth transition for stickiness */
+  }
+  

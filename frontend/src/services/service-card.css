@@ -1,0 +1,68 @@
+.service__item {
+    padding: 1.5rem; /* Ensures enough spacing inside the card */
+    border: 1px solid rgba(250, 131, 86, 0.3); /* Subtle border */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    text-align: center; /* Centers the content */
+    height: 85%; /* Ensures consistent height */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures even spacing between elements */
+}
+
+
+.service__item:hover {
+    transform: translateY(-5px); /* Slight upward lift on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.service__img {
+    width: 60px; /* Adjusted to look proportional */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--secondary-color); /* Ensure `--secondary-color` is well-defined */
+    margin: 0 auto 1rem; /* Centered image with bottom margin */
+}
+
+.service__item h5 {
+    font-size: 1.2rem; /* Slightly larger font for headings */
+    font-weight: 600; /* Bolder text for emphasis */
+    color: var(--primary-color); /* Primary color for headings */
+    margin-bottom: 0.5rem;
+}
+
+.service__item p {
+    font-size: 0.95rem; /* Slightly larger and more readable */
+    color: var(--text-color, #555); /* Default to a soft gray */
+    line-height: 1.5; /* Better line spacing for readability */
+}
+
+/* Optional responsiveness */
+@media (max-width: 768px) {
+    .service__item {
+        padding: 1rem;
+    }
+    .service__img {
+        width: 15%;
+        height: 15%;
+    }
+    .service__item h5 {
+        font-size: 1rem;
+    }
+    .service__item p {
+        font-size: 0.85rem;
+    }
+}
+
+.service__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem; /* Adds spacing between cards */
+    justify-content: center;
+    align-items: start;
+}
